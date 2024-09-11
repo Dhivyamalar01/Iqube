@@ -1,0 +1,22 @@
+Verify :
+sha256sum files/* | grep 55b983afdd9d10718f1db3983459efc5cc3f5a66841e2651041e25dec3efd46a(gn checksum)
+./decrypt.sh files/2cdcb2de(filename from verifying the hash)
+picoCTF{trust_but_verify_2cdcb2de}
+
+
+ *To open website view source cntrl+U
+  
+To decode a base64 data:
+      echo "cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMDJjZGNiNTl9" | base64 --decode
+
+Python code:
+
+import base64
+encoded_string = "Gljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMDJjZGNiNTl9"
+decoded_bytes = base64.b64decode(encoded_string)
+decoded_string = decoded_bytes.decode('utf-8')
+print(decoded_string)
+
+Git:
+  To initialise a git repository : git init
+  

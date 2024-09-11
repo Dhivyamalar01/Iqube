@@ -1,0 +1,43 @@
+domain name  ->  hosts file -> DNS cache -> Recursive DNS server -> Root name servers(TLD .com .co) -> Authoritatative name servers ->IP address reached -> connected.
+ping
+dig
+abuseIPDB
+rainbow tables -> storing hash values
+passwords -> hash functions -> hash values
+hash values + salting + peppering(for hash collision)
+salting -> adding random salt to the end of password -> unique salts not secret -> salt stored along with the hash values in database
+peppering -> "           pepper  "                   -> not unique but secret  -> pepper is not stored in database
+Hash Algorithms   -> (MD5 -> 128 bit hash value)  -> (SHA1  -> 160 bit as 40 digit hexadecimal number) -> (SHA2 -> 256 bit as a 64 digit hexadecimal value)
+
+To get the hash value:
+       Get-FileHash .\OpenVPN_2.5.1_I601_amd64.msi -Algorithm MD5
+
+To obtain the cname for specific website:
+       nslookup --type=CNAME shop.website.thm
+        
+wireshark PCAP:
+       to analyse network artifacts by analysing network protocol analyzer 
+       
+tshark command
+     tshark --Y http.request -e http.host -e.http.user_agent -r analysis_file.pcap 
+     
+Fuzzy hashing:
+     It creates a hash that capture similarities between two files.
+     
+Spansum(SSdeep):
+     Fuzzy hashing algorithm to identify similarities between files and identify the differnt types of malware
+     ssdeep file1.txt file2.txt
+     
+API:
+   application program interface (one application interacts with other)
+   
+Macros(microsoft)
+     Piece of instruction which helps in performing  repetitive tasks by storing them.
+  
+ VBA Code:
+     Users write VBA code to create custom functions, automate tasks, and interact with the Office application's object model (e.g., worksheets, documents, or forms). 
+ 
+
+netcat commands:
+    nc -zv(waiting till scanning for open ports) target_ip 122345
+    
